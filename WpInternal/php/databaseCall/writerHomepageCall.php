@@ -1,12 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username = "wpRootDatabase";
-$password = "orthrox";
-$dbname = "whitepanda";
+include('wpdbConn/dbConn.php');
+//connection created
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());

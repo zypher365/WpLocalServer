@@ -112,12 +112,8 @@ $sql = "SELECT determiner2_ques, determiner2_ans1, determiner2_ans2, determiner3
 
 
 
-define('DB_NAME', 'whitepanda');
-define('DB_USER', 'wpRootDatabase');
-define('DB_PASSWORD', 'orthrox');
-define('DB_HOST', 'localhost');
 
-$link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
+include('databaseCall/wpdbConn/dbLink.php');
 
 if (!$link)
 {

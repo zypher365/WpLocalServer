@@ -1,12 +1,6 @@
 <?php
 
-$servername = "localhost";
-$username = "wpRootDatabase";
-$password = "orthrox";
-$dbname = "whitepanda";
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+include('databaseCall/wpdbConn/dbConn.php');
 
 $temp=rand(1,9);
 

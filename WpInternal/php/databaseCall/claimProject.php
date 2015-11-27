@@ -1,6 +1,5 @@
 <?php
-include("dbConn.php");
-
+include('wpdbConn/dbConn.php');
 
 
 if (isset($_POST["orderID"]) && isset($_POST["username"]) && isset($_POST["OrderedDate"]))

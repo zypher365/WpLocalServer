@@ -18,15 +18,11 @@ session_start();
 
 $Username = $_SESSION['username'];
 
+include('wpdbConn/dbConn.php');
 
-$servername = "localhost";
-$username = "wpRootDatabase";
-$password = "orthrox";
-$dbname = "whitepanda";
+// connection $conn created mysqli
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 

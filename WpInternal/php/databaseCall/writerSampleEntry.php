@@ -55,10 +55,7 @@ $Username = $_SESSION['username'];
 
 
 
-$servername = "localhost";
-$username = "wpRootDatabase";
-$password = "orthrox";
-$dbname = "whitepanda";
+include('wpdbConn/dbConn.php');
 
 
 
@@ -67,8 +64,7 @@ $sectorEntry="topic_".$areaName;
 
 $sampleEntry="sample_".$areaName;
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Created connection $conn 
 
 // Check connection
 if (!$conn) {

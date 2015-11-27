@@ -61,13 +61,7 @@ If (isset($_POST["additionalCharges"])) {
 
 if(isset($_POST['txnid']))
 {
-$servername = "localhost";
-$username = "wpRootDatabase";
-$password = "orthrox";
-$dbname = "whitepanda";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+include("wpdbConn/dbConn.php");
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

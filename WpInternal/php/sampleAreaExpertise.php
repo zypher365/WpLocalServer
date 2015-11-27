@@ -13,12 +13,8 @@
     
     
 
-$host='localhost';
-$user='wpRootDatabase';
-$pass='orthrox';
-$dbname='whitepanda';
 
-$conn=new mysqli($host, $user, $pass, $dbname);
+include('databaseCall/wpdbConn/dbConn.php');
 
 if ($conn->connect_error)
 {

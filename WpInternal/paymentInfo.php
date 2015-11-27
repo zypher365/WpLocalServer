@@ -1,8 +1,7 @@
-dfghj
 <?php
 
 header("Location: facebook.com");
-include("dbConn.php");
+include("wpdbConn/dbConn.php");
 
 session_start();
 $myWpUsername=$_SESSION['username'];

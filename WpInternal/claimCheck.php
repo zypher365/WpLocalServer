@@ -1,7 +1,7 @@
 
 
 <?php
-include("dbConn.php");
+include("wpdbConn/dbConn.php");
 $claim="SELECT claimedOrderID FROM writerprofile WHERE email='".$Username."'";
 $results=mysqli_fetch_object(mysqli_query($conn, $claim));
 $orderID=$results->claimedOrderID;

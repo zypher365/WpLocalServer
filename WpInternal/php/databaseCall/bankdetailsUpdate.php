@@ -1,5 +1,5 @@
 <?php
-include('dbConn.php');
+include('wpdbConn/dbConn.php');
 if (isset($_POST['bankName']) && isset($_POST['bankAccountNo']) && isset($_POST['accountHolder']) && isset($_POST['bankIfsc']) && isset($_POST['bankuser'] ))
 {
 	$bankName=$_POST['bankName'];
